@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RPS_Game")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4809e50f4fc3edd9347dc8f716aa9b87c49cf3f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f0a53c4a7c1d189bc51483f5e749887efa583f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("RPS_Game")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RPS_Game")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
