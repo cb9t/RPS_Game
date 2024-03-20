@@ -51,7 +51,7 @@ namespace RPS_Game
                 goto playYesNo1;
             }
 
-            Console.WriteLine("Let`s go. Press Enter to contnite.");
+            Console.WriteLine(" Let`s go. Press Enter to contnite.");
             Console.ReadLine();
 
             string playerChoice;
@@ -71,7 +71,7 @@ namespace RPS_Game
                 if (playerChoice == "rock" || playerChoice == "paper" || playerChoice == "scissors") ;
                 else
                 {
-                    Console.WriteLine("Incorrect input. Try again.");
+                    Console.WriteLine(" Incorrect input. Try again.");
                     goto incorrectInput;
                 }
                 Console.WriteLine($" Computer choice: {compChoice[compRandom]}");
@@ -128,26 +128,26 @@ namespace RPS_Game
             Console.WriteLine(winRound > loseRound ? "\n You win this battle." : "\n You lose this battle.");
             if (winRound > loseRound) wins++;
             playYesNo2:
-            Console.WriteLine("Are you wont to repit? (Write: Yes/No) \n Your choice: ");
+            Console.Write(" Are you wont to repit? (Write: Yes/No) \n Your choice: ");
             startChoice = Console.ReadLine().ToLower();
             if (startChoice == "yes") ;
             else if (startChoice == "no")
             {
-                Console.Write($"Sorry, see you next time, {nickname}");
+                Console.Write($" Sorry, see you next time, {nickname}");
                 goto endGame;
             }
             else
             {
-                Console.WriteLine("Dont understand. Try again");
+                Console.WriteLine(" Dont understand. Try again");
                 goto playYesNo2;
             }
-            Console.WriteLine("Press Enter to contnite.");
+            Console.WriteLine(" Press Enter to contnite.");
             Console.ReadLine();
             playerInfo();
             goto reloadedGame;
 
             endGame:
-            Console.WriteLine("By by");
+            Console.WriteLine("\n By by");
 
 
         }
