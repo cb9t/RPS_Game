@@ -1,0 +1,14 @@
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\bin\Debug\net8.0\RPS_Game.exe
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\bin\Debug\net8.0\RPS_Game.deps.json
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\bin\Debug\net8.0\RPS_Game.runtimeconfig.json
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\bin\Debug\net8.0\RPS_Game.dll
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\bin\Debug\net8.0\RPS_Game.pdb
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\obj\Debug\net8.0\RPS_Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\obj\Debug\net8.0\RPS_Game.AssemblyInfoInputs.cache
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\obj\Debug\net8.0\RPS_Game.AssemblyInfo.cs
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\obj\Debug\net8.0\RPS_Game.csproj.CoreCompileInputs.cache
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\obj\Debug\net8.0\RPS_Game.dll
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\obj\Debug\net8.0\refint\RPS_Game.dll
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\obj\Debug\net8.0\RPS_Game.pdb
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\obj\Debug\net8.0\RPS_Game.genruntimeconfig.cache
+C:\Users\sviat\Desktop\Varto\VisualStudio\RPS_Game\RPS_Game\RPS_Game\obj\Debug\net8.0\ref\RPS_Game.dll
