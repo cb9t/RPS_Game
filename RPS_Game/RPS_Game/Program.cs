@@ -1,19 +1,21 @@
 ﻿using static System.Net.Mime.MediaTypeNames;
 using System.Runtime.Intrinsics.X86;
 using System.ComponentModel;
+using System.Xml.Resolvers;
+using System;
 
 namespace RPS_Game
 {
     internal class Program
     {
         static void Main(string[] args)
-         {/*
+         {
             start:
             string nickname;
             string startChoice;
             int age = 0;
             int totalRounds = 0;
-            int wins = 0;
+            int wins = 0;   
             void playerInfo()
             {
                 Console.Clear();
@@ -33,38 +35,33 @@ namespace RPS_Game
             }
             
             playerInfo();
-            playYesNo:
+            playYesNo1:
             Console.Write($"\n Are you ready to start fight? (Write: Yes/No) \n Your choice: ");
-
-            test:
            
             startChoice = Console.ReadLine().ToLower();
             if (startChoice == "yes") ;
             else if (startChoice == "no")
             {
-                Console.Write($"Sorry, see you next time, {nickname}");
-            //    goto endGame;
+                Console.Write($" Sorry, see you next time, {nickname}");
+                goto endGame;
             }
             else
             {
-                Console.WriteLine("Dont understand. Try again");
-                goto playYesNo;
+                Console.WriteLine(" Dont understand. Try again");
+                goto playYesNo1;
             }
-           
-                Console.WriteLine("lets play");
-                Console.ReadLine();
 
-            goto test;
-            */
-           
+            Console.WriteLine("Let`s go. Press Enter to contnite.");
+            Console.ReadLine();
+
             string playerChoice;
-            int round = 0;
             string[] compChoice = {"rock", "paper", "scissors"};
             Random rand = new Random();
-
+            reloadedGame:
             int winRound = 0;
+            int loseRound = 0;
 
-            for (int i = 0; i < 10; i++)    
+            for (int i = 0; i < 3; i++)    
             {
                 int compRandom = rand.Next(0, 3);
                 Console.Write("\n Make your choice - Rock, Paper or Scissors.");
@@ -84,89 +81,73 @@ namespace RPS_Game
                 {
                     case "rock.rock":
                         Console.WriteLine(" Draw");
+                        totalRounds++;
                         break;
                     case "rock.paper":
-                        winRound -= 1;
+                        loseRound++;
+                        totalRounds++;
                         Console.WriteLine(" Computer win this round");
                         break;
                     case "rock.scissors":
-                        winRound += 1;
+                        winRound++;
+                        totalRounds++;
                         Console.WriteLine(" You win this round");
                         break;
                     case "paper.rock":
-                        winRound += 1;
+                        winRound++;
+                        totalRounds++;
                         Console.WriteLine(" You win this round");
                         break;
                     case "paper.paper":
                         Console.WriteLine(" Draw");
+                        totalRounds++;
                         break;
                     case "paper.scissors":
-                        winRound -= 1;
+                        loseRound++; 
+                        totalRounds++;
                         Console.WriteLine(" Computer win this round");
                         break;
                     case "scissors.rock":
-                        winRound += 1;
+                        loseRound++; 
+                        totalRounds++;
                         Console.WriteLine(" You win this round");
                         break;
                     case "scissors.paper":
-                        winRound += 1;
+                        winRound++;
+                        totalRounds++;
                         Console.WriteLine(" You win this round");
                         break;
                     case "scissors.scissors":
                         Console.WriteLine(" Draw");
+                        totalRounds++;
                         break;
 
-
-
-
-
-
                 }
-                /*
-                if (playerChoice == "rock")
-                {
-                    if (playerChoice == "rock") Console.WriteLine("Draw");
-                    else if (playerChoice == "paper")
-                    {
-                        winRound -= 1;
-                        Console.WriteLine("Computer win this round");
-                    }
-                    else if (playerChoice == "scissors")
-                    { 
-                        winRound += 1;
-                        Console.WriteLine("You win this round");
-                    } 
-                }
-                if (playerChoice == "paper")
-                {
-                    if (playerChoice == "rock")
-                    {
-                        winRound += 1;
-                        Console.WriteLine("You win this round");
-                    }
-                    else if (playerChoice == "paper") Console.WriteLine("Draw");
-                    else if (playerChoice == "scissors")
-                    { 
-                        winRound -= 1;
-                        Console.WriteLine("Computer win this round");
-                    } 
-                }
-                if (playerChoice == "scissors")
-                {
-                    if (playerChoice == "rock")
-                    { 
-                        winRound -= 1;
-                        Console.WriteLine("Computer win this round");
-                    } 
-                    else if (playerChoice == "paper")
-                    { 
-                        winRound += 1;
-                        Console.WriteLine("You win this round");
-                    } 
-                    else if (playerChoice == "scissors") Console.WriteLine("Draw");
-                }*/
+                
             }
-            
+            Console.WriteLine(winRound > loseRound ? "\n You win this battle." : "\n You lose this battle.");
+            if (winRound > loseRound) wins++;
+            playYesNo2:
+            Console.WriteLine("Are you wont to repit? (Write: Yes/No) \n Your choice: ");
+            startChoice = Console.ReadLine().ToLower();
+            if (startChoice == "yes") ;
+            else if (startChoice == "no")
+            {
+                Console.Write($"Sorry, see you next time, {nickname}");
+                goto endGame;
+            }
+            else
+            {
+                Console.WriteLine("Dont understand. Try again");
+                goto playYesNo2;
+            }
+            Console.WriteLine("Press Enter to contnite.");
+            Console.ReadLine();
+            playerInfo();
+            goto reloadedGame;
+
+            endGame:
+            Console.WriteLine("By by");
 
 
         }
